@@ -1,0 +1,1 @@
+$(document).ready(function(){(new WOW).init(),$(".toggle-menu").unbind("click").click(function(){$(".main-menu").slideToggle()})});

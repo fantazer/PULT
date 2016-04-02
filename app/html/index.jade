@@ -1,0 +1,240 @@
+//Include style
+include ./block_html/style.jade
+body
+	//Include header
+	include ./block_html/header.jade
+	include ./block_html/elements/const.jade
+	
+	.top-menu
+		.main-cont
+			.header-top
+				.header-top-left
+					.toggle-menu
+						i.fa.fa-bars
+					.header-logo
+						img(src="img/logo.png", alt="")
+				.main-menu
+					a(href="#") Главная
+					a(href="#") О нас
+					a(href="#") Каталог товаров
+					a(href="#") Новости
+					a(href="#") Контакты
+				.header-top-right 
+					.header-flag
+						img(src="img/icon-flag.png", alt="")
+						i.fa.fa-angle-down
+					a(href="#").header-enter войти
+						i.fa.fa-sign-in
+					.header-number +7 495 945-90-42
+	.top-cont
+		.top-cont-slogan
+			.top-cont-slogan-text 
+				span.wow.slideInLeft(data-wow-duration="1.5s" data-wow-delay=".5s") универсальные <br>
+				span.wow.slideInLeft(data-wow-duration="1.5s" data-wow-delay="1s") пульты
+			.top-cont-slogan-small.wow.slideInLeft(data-wow-duration="2s" data-wow-delay="1s") выгодные условия сотрудничества
+			a(href="#").wow.slideInLeft(data-wow-duration="2.5s" data-wow-delay="1s") Купить 
+		.top-cont-img.wow.fadeInRight(data-wow-duration="1s" data-wow-delay="3s")
+			img(src="img/pult-changer.png", alt="")
+
+
+
+	//- .service
+	//- 	.main-cont
+	//- 		.service-wrap
+	//- 			.service-el
+	//- 				.service-el-img
+	//- 					img(src="img/icon-base.png", alt="")
+	//- 				.service-el-text Огромная база прошивок
+	//- 				.black-block
+
+	//- 			.service-el
+	//- 				.service-el-img
+	//- 					img(src="img/icon-prog.png", alt="")
+	//- 				.service-el-text Перепрограм-<br>мирование
+	//- 				.black-block
+
+	//- 			.service-el
+	//- 				.service-el-img
+	//- 					img(src="img/icon-usb.png", alt="")
+	//- 				.service-el-text Прошивка <br> через USB
+	//- 				.black-block
+	
+	.service-block
+		.main-cont
+			.service-block-wraper
+				.service-block-left
+					img(src="img/pult.png", alt="")
+				.service-block-right
+					.service-block-right-el
+						.service-block-el-logo 
+							img(src="img/icon-base.png", alt="")
+						.service-block-el-info
+							.service-block-title Огромная база прошивок
+							.service-block-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. A reprehenderit, ullam, quaerat explicabo ipsum repellendus officiis ducimus molestias beatae. Corporis, pariatur sapiente a, doloremque reiciendis totam fuga, dolor, maxime aperiam quaerat aliquam optio tempore? Voluptates 
+
+					.service-block-right-el
+						.service-block-el-logo 
+							img(src="img/icon-prog.png", alt="")
+						.service-block-el-info
+							.service-block-title Прошивка
+							.service-block-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur eligendi aliquid minus architecto repellendus nostrum est sunt et, id deserunt, amet ab eveniet eaque dolores dignissimos accusantium soluta autem incidunt eum hic corrupti 
+					.service-block-right-el
+						.service-block-el-logo 
+							img(src="img/icon-usb.png", alt="")
+						.service-block-el-info
+							.service-block-title Прошивка через USB
+							.service-block-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum soluta mollitia quia tempora voluptatem voluptate labore eos suscipit doloremque, officiis nobis eaque quaerat, quis amet nostrum quo excepturi aliquam sunt! Itaque quaerat tenetur magnam impedit 
+	//- .find
+	//- 	.main-cont
+	//- 		.find-wraper
+	//- 			.title Найти свой пульт
+	//- 			img(src="img/pult.png", alt="").find-imge-pult
+	//- 			.find-tab-wraper
+	//- 				.find-tab-title По технике
+	//- 				.find-tab-search
+	//- 					input(type="text")
+	//- 					button Поиск
+	//- 				.find-tab-text
+	//- 					p  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias cum sapiente neque magni cumque quidem similique a explicabo commodi non quisquam tenetur, accusamus voluptatibus omnis amet voluptatem, reiciendis facere rerum, ullam consequatur ea ab. Commodi eligendi illum, consectetur fuga! Pariatur cupiditate sit veniam perferendis! Consectetur veniam libero unde molestiae, voluptas aspernatur ab ipsa 
+	
+	.find-block
+		.main-cont
+			.title Найдите свой пульт
+			.find-block-wraper
+				.find-block-left
+					.find-block-img
+						img(src="img/Televizor.png", alt="")
+					.find-block-title По технике
+					.find-block-input
+						input(type="text")
+						button Поиск
+					.find-block-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore libero aut sequi ducimus laudantium nihil similique pariatur vero facere qui nesciunt adipisci dolore, odio, unde aspernatur. Inventore perspiciatis similique illum.
+				.find-block-right
+					.find-block-img
+						img(src="img/pult-find.png", alt="")
+					.find-block-title По пульту
+					.find-block-input
+						input(type="text")
+						button Поиск
+					.find-block-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore libero aut sequi ducimus laudantium nihil similique pariatur vero facere qui nesciunt adipisci dolore, odio, unde aspernatur. Inventore perspiciatis similique illum.
+
+	.users-block
+		.main-cont
+			.title Уникальная база прошивок для любых пультов
+			.users-wraper
+				.users-el
+					.users-el-img
+						img(src="img/img-for-user-1.png", alt="")
+					.users-el-title Продавцы пультов
+					.users-el-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa adipisci architecto non ipsa assumenda aperiam necessitatibus, ullam perferendis, est dicta tempore ab ut. Iste quae officiis ipsa, laudantium quod, odio?
+				.users-el
+					.users-el-img
+						img(src="img/img-for-user-2.png", alt="")
+					.users-el-title Гостинечный бизнес
+					.users-el-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa adipisci architecto non ipsa assumenda aperiam necessitatibus, ullam perferendis, est dicta tempore ab ut. Iste quae officiis ipsa, laudantium quod, odio?
+				.users-el
+					.users-el-img
+						img(src="img/img-for-user-3.png", alt="")
+					.users-el-title Сети кабельного или цифрового TV
+					.users-el-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa adipisci architecto non ipsa assumenda aperiam necessitatibus, ullam perferendis, est dicta tempore ab ut. Iste quae officiis ipsa, laudantium quod, odio?
+				.users-el
+					.users-el-img
+						img(src="img/img-for-user-4.png", alt="")
+					.users-el-title Любой Пользователь
+					.users-el-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa adipisci architecto non ipsa assumenda aperiam necessitatibus, ullam perferendis, est dicta tempore ab ut. Iste quae officiis ipsa, laudantium quod, odio?
+
+	.firmware-block
+		.main-cont
+			.firmware-wraper
+				.firmware-left
+					.title Новые прошивки
+					.firmware-left-wraper
+						- for (var c = 0; c < 2; c++)
+							.firmware-left-wraper-col
+								- for (var a = 0; a < 5; a++)
+									.firmware-left-el
+										.firmware-left-el-icon
+											img(src="img/icon-check.png", alt="")
+										.firmware-left-el-text Телевизор <br> SAMSUNG R543
+				.firmware-right
+					.title Пульты для прошивок
+					.firmware-right-wraper
+						.firmware-right-img
+							img(src="img/pult-short.png", alt="")
+						.firmware-right-info
+							.firmware-right-info-title Подходит для прошивок
+							- for (var b = 0; b < 5; b++)
+								.firmware-right-info-el
+									.firmware-right-info-img
+										img(src="img/icon-check.png", alt="")
+									.firmware-right-info-text Телевизор SAMSUNG R543
+							a(href="#").firmware-right-get Заказать
+
+	.get-block
+		.main-cont
+			.title Как получить прошивку
+			.get-wraper
+				.get-left
+					img(src="img/pult-changer.png", alt="")
+				.get-right
+					.get-right-wraper
+						.get-right-el
+							.get-right-el-numb 1
+							.get-right-el-info
+								.get-right-el-title Скачать программу
+								.get-right-el-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe labore placeat at eum maiores, odio repellat repellendus nam praesentium ad!
+						.get-right-el
+							.get-right-el-numb 2
+							.get-right-el-info
+								.get-right-el-title Найти прошивку
+								.get-right-el-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet asperiores enim a, iusto blanditiis dolorem illo voluptatem beatae molestias accusantium!
+						.get-right-el
+							.get-right-el-numb 3
+							.get-right-el-info
+								.get-right-el-title Не нашли мы найдем за вас 
+								.get-right-el-text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit possimus, tempore, sint impedit cum ipsa eos provident voluptatem officiis fuga.
+						a(href="#").firmware-right-get Напишите нам
+
+	.press-block
+		.main-cont
+			.press-wraper
+				.press-publish
+					.title Публикации о нас
+					.press-publish-wraper
+						- for (var d = 0; d < 2; d++)
+							.press-col
+								.press-col-img
+									img(src="img/news-#{d+1}.png", alt="")
+								.press-col-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt reiciendis aut, totam, at excepturi vel neque obcaecati tempore consequuntur, labore culpa aliquid ea maxime facere asperiores adipisci dolorum aperiam, doloremque odio saepe error blanditiis. Optio nesciunt consequatur dolorum min
+				.press-video
+					.title Видео
+					.press-video-img
+						img(src="img/news-3.png", alt="")
+					.press-video-text  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto consequatur unde suscipit ipsam eius maiores officia vel quia praesentium, rem mollitia sed explicabo molestias provident distinctio? Quidem odio nihil earum cumque cupiditate unde alias, voluptates totam impedit reiciendis fuga vitae!fficia vel quia praesentium, rem mollitia sed explicabo molestias provident distinctio? Quidem odio nihil earum cumque cupiditate unde alias, voluptates totam impedit reiciendis fuga vitae!fficia vel quia praesentium, rem mollitia sed explicabo molestias provident distinctio? Quidem odio nihil earum cumque cupiditate unde alias, voluptates totam impedit reiciendis fuga vitae!
+
+	.footer
+		.main-cont
+			.footer-wraper
+				.footer-logo
+					img(src="img/logo.png", alt="")
+				.footer-soc
+					a(href="").footer-soc-el
+						i.fa.fa-vk
+					a(href="").footer-soc-el
+						i.fa.fa-instagram
+					a(href="").footer-soc-el
+						i.fa.fa-facebook
+					a(href="").footer-soc-el
+						i.fa.fa-youtube-play
+				.footer-number +7 495 945-90-42
+
+
+
+
+
+//Include footer
+include ./block_html/script.jade
+
+//Include script
+include ./block_html/script.jade
+

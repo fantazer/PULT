@@ -1,0 +1,602 @@
+@import "variable/*"
+@import "icon/*"
+@import 'axis'
+@import 'jeet'
+@import 'rupture'
+
+border-box-html()
+fluid-media() //care flex box image
+rupture.scale = 0 320px 640px 768px 1024px 1280px
+rupture.scale-names = 'xs' 's' 'm' 'l' 'xl' 
+jeet.gutter = 1
+
+
+.allpage
+	background #eee
+	wraper
+		background white
+		height 100vh
+		a
+			padding 20px
+			display block
+			box-shadow 1px 1px 20px #eee
+			margin-bottom 10px
+			border-radius 5px
+			tr(all)
+			&:hover
+				background #6D2D74
+				color white
+.wraper
+	center(1200px)
+	box-shadow: 0px 0px 5px grey
+.main-cont
+	center(1180px)
+.title
+	+below(640px)
+		margin-bottom 20px!important
+	font-size 36px
+body
+	font-family fira
+	font-size 16px
+.main-cont
+	padding 0 5px
+.header
+	+below(1400px)
+		background-size contain
+	bgi('bg-head.png');
+	height 100vh
+	width 100%
+	background-size cover
+	background-color: #FFF
+.header-number
+	+below(1024px)
+		font-size 14px
+	+below(640px)
+		white-space nowrap
+		font-size 16px
+		color white!important
+	color white
+	margin-left 20px
+	font-size 20px
+.top-cont
+	+below(640px)
+		background-position -300px
+	width 100%
+	height 100vh
+	bgi('main-bg-5.jpg'); 
+	background-size cover
+	flex(mid)
+.top-menu
+	background #28373E
+	padding 10px
+	position absolute
+	width 100%
+	top 0
+.header-top
+	flex(between)
+	position relative
+	min-height 50
+.toggle-menu
+	display none
+	&:hover
+		cursor pointer
+	+below(768px)
+		display block
+		font-size 24px
+		color white
+		margin 0 10px
+.header-top-left
+	f()
+	align-items center
+.header-top-right
+	flex(between)
+.header-logo
+	+below(640px)
+		width 100px
+	padding-top 1px
+.header-flag
+	+below(1024px)
+		display none
+	flex(mid)
+	margin-right 20px
+	color #DBDBDB
+	img
+		margin-right 10px
+
+.header-enter
+	+below(1024px)
+		display none
+	color #DBDBDB
+	text-transform uppercase
+	i
+		margin-left 10px
+		
+.service 
+	background Dgrey
+	padding 5% 0
+.service-wrap 
+	flex(around)
+.service-el
+	background white
+	border 3px solid green
+	flex(mid)
+	fl()
+	padding 20px 
+	width 20%
+.service-el-img
+	padding 20px
+	margin 10px 0
+	border-radius 50%
+	background green 
+.service-el-text 
+	color #1f1c15
+	font-family "Noto Sans"
+	font-size 16px
+	font-weight 700
+	line-height 24px
+	text-transform uppercase
+	text-align center
+	
+.black-block
+	width 50%
+	height 10px
+	background black
+	margin-top 20px
+	
+.title
+	+below(640px)
+		line-height initial
+		font-size 22px
+	color #1f1c15
+	//font-family "Noto Sans"
+	font-size 36px
+	font-weight 700
+	line-height 45px
+	text-transform uppercase
+
+.find
+	bgi('bg-grey.png')
+	background-repeat repeat-y
+	background-size contain
+	padding 20px
+	.title
+		text-align center
+//.main-cont
+.find-wraper
+	position relative
+.find-imge-pult
+	position absolute
+//.find-tab-wraper
+//.find-tab-title
+//.find-tab-search
+//.find-tab-text
+
+.main-menu
+	+above(768px)
+		display flex!important
+	+below(768px)
+		z-index 2000
+		display none
+		position absolute
+		width 100%
+		width calc(100%+40px)
+		left 0
+		top 58px
+		margin-left -20px
+		
+		fw()
+		a
+			display block!important
+			width 100%
+			background #28373E
+			margin-right 0!important
+			font-size 16px!important
+			padding 10px
+			text-align center
+	flex(between)
+	
+	a
+		+below(1024px)
+			font-size 12px
+			margin-right 20px
+			white-space nowrap
+		text-transform uppercase
+		margin-right 40px
+		color #DBDBDB
+
+.top-cont-slogan
+	flex(mid)
+	fl()
+	align-items flex-start
+	a
+		background red
+		padding 5px 40px
+		color white
+		display inline-block
+		text-transform uppercase
+		font-size 20px
+.top-cont-slogan-text
+	+below(1280px)
+		font-size 44px
+	+below(640px)
+		font-size 28px
+		line-height initial
+	font-size 62px
+	text-transform uppercase
+	color white
+	line-height 60px
+	span
+		padding 10px 20px
+		background #3B3C37
+		display inline-block
+		margin-top 10px
+	//text-align center
+	
+.top-cont-slogan-small
+	color white
+	margin 10px 0
+	
+.top-cont-slogan
+	+below(1024px)
+		width 50%
+	+below(640px)
+		width 90%
+	width 30%
+	
+.top-cont-img
+	+below(640px)
+		display none
+	flex(mid)
+	width 30%
+	img
+		width 25%
+	
+
+//.service-block
+
+.service-block-wraper
+	+below(640px)
+		padding 20px 0
+	f()
+	padding 100px 0px
+.service-block-left
+	+below(640px)
+		display none
+	width 50%
+	img
+		display block
+		margin 0 auto
+//.find-imge-pult
+.service-block-right
+	+below(640px)
+		width 100%
+		padding 20px
+	width 50%
+	flex(mid)
+	fl()
+.service-block-right-el
+	f()
+	margin-bottom 20px
+.service-block-el-logo
+	width 40%
+	min-width 40px
+	margin-right 20px
+//.service-block-el
+
+//.service-block-el-info
+.service-block-title
+	text-transform uppercase
+	font-weight bold
+	font-size 22px 
+	color red
+.service-block-text
+	font-size 12px
+	
+.find-block
+	+below(640px)
+		background #E6EFF2
+		padding 20px 0
+	padding 60px 0
+	bgi('main-bg-9.jpg')
+	//color white
+//.main-cont 
+	.title
+		margin 20px 0
+		text-align center 
+		margin-bottom 50px
+		//color white
+.find-block-wraper
+	+below(640px)
+		fw()
+		padding 20px
+	flex(between)
+.find-block-left 
+	+below(640px)
+		width 100%
+	width 40%
+	flex(mid)
+	fl()
+.find-block-title
+	+below(640px)
+		font-size 20px
+	text-align center
+	font-size 26px
+	font-weight bold
+	text-transform uppercase
+.find-block-input
+	width 80%
+	margin 10px 0
+	f()
+	input[type="text"]
+		background white
+		padding 5px
+		width 100%
+		border-radius 0px!important
+	button
+		color white
+		background red
+		border 0px
+		padding 0 20px
+		text-align center
+.find-block-text 
+	text-align center
+.find-block-right 
+	+below(640px)
+		width 100%
+	width 40%
+	flex(mid)
+	fl()
+	
+.find-block-img
+	img
+		margin-bottom 30px
+		
+.users-block
+	+below(640px)
+		padding 20px 0
+	padding 60px 0
+//.main-cont
+//.title
+.users-wraper
+	flex(between)
+	+below(1024px)
+		fw()
+	margin-top 60px
+.users-el
+	+below(1024px)
+		flex(mid)
+		fl()
+		width 100%
+	padding 0 30px
+	margin-bottom 20px
+.users-el-img
+	+below(1024px)
+		img
+			margin 0 auto
+.users-el-title
+	text-transform uppercase
+	margin 10px 0
+	font-weight bold
+.users-el-text
+	+below(1024px)
+		text-align center
+	font-size 12px
+	
+.firmware-block
+	+below(640px)
+		padding-bottom 20px
+	padding-bottom 80px
+//.main-cont
+.firmware-wraper
+	+below(1024px)
+		fw()
+	f()
+.firmware-left
+	+below(1024px)
+		width 100%
+	width 50%
+//.title
+.firmware-left-wraper
+	flex(mid)
+.firmware-left-wraper-col
+	width 50%
+	flex(mid)
+	fl()
+.firmware-left-el
+	f()
+	margin-bottom 10px
+.firmware-left-el-icon
+	+below(640px)
+		margin 0 10px
+	margin-right 20px
+.firmware-left-el-text
+	+below(640px)
+		font-size 12px
+	text-transform uppercase
+	
+.firmware-right
+	+below(1024px)
+		width 100%
+		margin-bottom 40px
+	width 50%
+.firmware-right-wraper
+	+below(640px)
+		fw()
+	f()
+.firmware-right-img
+	+below(640px)
+		width 100%
+	width 50%
+	img
+		margin 0 auto
+.firmware-right-info
+	+below(640px)
+		width 100%
+		margin-top 20px
+	width 50%
+	flex(mid)
+	fl()
+.firmware-right-info-title
+	text-transform uppercase
+	margin-bottom 30px
+	font-size 18px
+	font-weight bold
+.firmware-right-info-el
+	flex(mid)
+	margin-bottom 10px
+.firmware-right-info-img
+	margin-right 20px
+.firmware-right-info-text
+	text-transform uppercase
+.firmware-right-get
+	background #d13f19
+	padding 5px 40px
+	color #fff
+	display inline-block
+	text-transform uppercase
+	font-size 20px
+	margin-top 20px
+	
+.get-block
+	+below(640px)
+		padding 20px 0
+		background #2E3D45
+	padding 80px 0
+	bgi('main-bg-10.jpg'); 
+	.title
+		color white
+
+.get-right-el-info
+	+below(640px)
+		flex 8 1
+//.main-cont
+.get-wraper
+	+below(640px)
+		fw()
+	f()
+.get-left
+	+below(640px)
+		display none
+	width 50%
+	flex(mid)
+	img
+		width 20%
+.get-right
+	+below(640px)
+		width 100%
+		padding 20px
+	flex(mid)
+	fl()
+	width 50%
+.get-right-el
+	f()
+	align-items center
+	width 100%
+	margin-bottom 20px
+.get-right-el-numb
+	+below(640px)
+		width 60%
+		max-width 60px
+	font-size 26px
+	line-height 50px
+	margin-right 20px
+	width 50px
+	height 50px
+	text-align center
+	color white
+	//border-radius 50%
+	border 2px solid red
+.get-right-el-title
+	color white
+	text-transform uppercase
+	font-size 20px
+.get-right-wraper
+	+below(640px)
+		flex(mid)
+		fl()
+
+.get-right-el-text
+	color white
+	font-size 12px
+	
+.press-block
+	+below(640px)
+		padding 20px 0
+	padding 80px 0
+//.main-cont
+.press-wraper
+	+below(1024px)
+		fl()
+	f()
+.press-publish
+	+below(1024px)
+		width 100%
+		padding 10px
+	width 50%
+.press-publish-wraper
+	+below(640px)
+		fw()
+	f()
+//.title
+.press-col
+	+below(1024px)
+		flex(mid)
+		fl()
+	+below(640px)
+		width 100%
+		margin-bottom 20px
+	width 45%
+	&:first-child
+		margin-right 5%
+.press-col-img
+	margin-bottom 20px
+	+below(1024px)
+		img
+			margin 0 auto
+.press-col-text
+	+below(1024px)
+		text-align center
+	font-size 14px
+.press-video
+	+below(1024px)
+		width 100%
+		padding 20px
+		flex(mid)
+		fl()
+	width 50%
+.press-video-img
+	+below(1024px)
+		width 100%
+	margin-bottom 20px
+.press-video-text
+	+below(1024px)
+		text-align center
+	font-size 14px
+
+.footer
+	background #28373E
+	padding 10px
+//.main-cont
+.footer-wraper
+	+below(640px)
+		fw()
+		flex(mid)
+	flex(between)
+//.footer-logo
+	
+//.footer-soc
+.footer-soc-el
+	+below(640px)
+		margin-left 10px
+		display none
+	color white
+	margin-right 20px
+
+.footer-number
+	+below(640px)
+		font-size 18px
+		margin-left 20px
+	color white
+	font-size 20px
+	white-space nowrap
+	font-size 14px
