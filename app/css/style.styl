@@ -603,3 +603,36 @@ body
 	font-size 20px
 	white-space nowrap
 	font-size 14px
+.number-block
+	bgi('main-bg-8.jpg'); 
+	background-size cover
+	padding 40px
+	.title
+		color white
+.number-wraper
+	f()
+	fw()
+	
+.number-left
+	+below(640px)
+		display none
+	width 50%
+	flex(mid)
+	img
+		width 20%
+.number-right
+	+below(640px)
+		width 100%
+	width 50%
+	flex(mid)
+.number-right-wraper
+	flex(mid)
+	fl()
+//.number-right-el
+.number-right-title
+	font-weight 600
+	font-size 84px
+	color rgb(238, 181, 57)
+.number-right-text
+	text-align center
+	color white
